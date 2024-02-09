@@ -119,8 +119,61 @@ if ($a >= $b) {
 }
 // Output: a is greater than or equal to b
 echo "</br>";
-//==>
 
+//==>Logical AND (&& or and): This operator returns true if both operands are true.
+$x = 5;
+$y = 10;
+if ($x > 0 && $y > 0) {
+	echo "Both x and y are positive";
+} else {
+	echo "Either x or y is not positive";
+}
+// Output: Both x and y are positive
+
+echo "</br>";
+
+
+//==>Logical OR (|| or or): This operator returns true if at least one of the operands is true.
+$x = 5;
+$y = -10;
+if ($x > 0 || $y > 0) {
+	echo "At least one of x and y is positive";
+} else {
+	echo "Neither x nor y is positive";
+}
+// Output: At least one of x and y is positive
+
+echo "</br>";
+
+
+//==>Logical NOT (!): This operator negates the value of its operand, i.e.,
+// it returns true if the operand is false, and vice versa.
+$x = 5;
+if (!$x) {
+	echo "x is false";
+} else {
+	echo "x is true";
+}
+// Output: x is true
+
+echo "</br>";
+
+
+//==> Pre-increment (++$variable):
+// This operator increments the value of the variable and then returns the incremented value.
+$a = 5;
+echo ++$a; // Output: 6
+
+echo "</br>";
+
+
+//==>Post-increment ($variable++): This operator returns the value of the variable and
+// then increments the variable.
+$a = 5;
+echo $a++; // Output: 5
+echo $a;   // Output: 6
+
+echo "</br>";
 
 
 
